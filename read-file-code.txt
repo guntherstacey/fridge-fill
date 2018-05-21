@@ -1,7 +1,8 @@
 def read_file(text_file):
   if ".txt" in text_file:
     recipe_list = open(r text_file)
-    print (recipe_list.read())
+    opened_recipe_list = (recipe_list.read())
+    return opened_recipe_list
   else:
     print ("Invalid Input: Not a .txt file")
  def read_file("Documents\Fridge_Fill\fridge-fill-sample-input.txt")

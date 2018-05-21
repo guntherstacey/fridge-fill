@@ -5,4 +5,4 @@ def read_file(text_file):
     print opened_recipe_list
   else:
     print ("Invalid Input: Not a .txt file")
-read_file(".\\fridge-fill-sample-input.txt")
+read_file("fridge-fill-sample-input.txt")

@@ -9,7 +9,7 @@ def read_file(text_file):
 
 
 def list(string_input):
-	list = [string_input.split(".")]
+	list = [string_input.split("#")]
     #print list
     	preingredients = list.pop()
 	ingredients = []

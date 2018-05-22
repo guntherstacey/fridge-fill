@@ -8,7 +8,7 @@ def read_file(text_file):
 
 
 
-def ingredients(string_input):
+def list(string_input):
 	list = [string_input.split(".")]
     #print list
     	preingredients = list.pop()
@@ -20,4 +20,4 @@ def ingredients(string_input):
 	print ingredients
 
 read_file("fridge-fill-sample-input.txt")
-ingredients(read_file("fridge-fill-sample-input.txt"))
+list(read_file("fridge-fill-sample-input.txt"))

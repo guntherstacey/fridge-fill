@@ -7,7 +7,7 @@ def read_file(text_file):
     print ("Invalid Input: Not a .txt file")
 
 def ilist(string_input):
-	ilist = string_input.split(".")
+	ilist = string_input.split("#")
 #print ilist
 	preingredients = [ilist].pop()
 	ingredients = []

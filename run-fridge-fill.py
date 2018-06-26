@@ -7,12 +7,15 @@ def read_file(text_file):
     print ("Invalid Input: Not a .txt file")
 
 def ingredients(recipes):
+  list_of_ingredients = []
   ingredients_block = recipes.splitlines()
-  for item in ingredients_block:
-    start = item[item.index("$") + 1]
-    stop = item[item.index("$", start)]
-    new_ingredients_block += item[start:stop]
-    print new_ingredients
+  for ingredient in ingredients_block:
+    start = ingredient.find("$") + 1
+    end = ingredient.find("$", start)
+    each_ingredient = ingredient[start:end]
+    list_of_ingredients.append(each_ingredient)
+  print(list_of_ingredients)
+  
 
 
 recipe_block = read_file("fridge-fill-sample-input.txt")
